@@ -8,7 +8,7 @@ Instalation
 -----------
 
 ```
-pip install git+https://github.com/ze-phyr-us/pearhash.git
+pip install pearhash
 ```
 
 
