@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
 	name = 'pearhash',
-	version = '1.0.0',
+	version = '1.0.1',
 	author = 'Vita Smid',
 	author_email = 'me@ze.phyr.us',
 	py_modules = ['pearhash',],
