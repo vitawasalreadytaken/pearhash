@@ -19,9 +19,9 @@ Usage
 >>> from pearhash import PearsonHasher
 >>> hasher = PearsonHasher(2) # Set desired hash length in bytes.
 >>> hasher.hash(b'ni hao')
-bytearray(b'\xb76')
+bytearray(b'\x12\x97')
 >>> hasher.hash(b'ni hao').hexdigest()
-'b736'
+'1297'
 ```
 
 Hash length can be changed easily:
@@ -29,7 +29,7 @@ Hash length can be changed easily:
 ```
 >>> hasher = PearsonHasher(4)
 >>> hasher.hash(b'ni hao').hexdigest()
-'b73672e9'
+'1297b8d9'
 ```
 
 And you can even change the seed used to generate the pseudorandom table:
@@ -37,5 +37,5 @@ And you can even change the seed used to generate the pseudorandom table:
 ```
 >>> hasher = PearsonHasher(2, seed = 'whatevs')
 >>> hasher.hash(b'ni hao').hexdigest()
-'ae0d'
+'d710'
 ```

@@ -13,7 +13,8 @@ class PearsonHasher:
 		self.length = length
 		generator = random.Random()
 		generator.seed(seed)
-		self.table = [ generator.randint(0, 255) for i in range(256) ]
+		self.table = list(range(256))
+		generator.shuffle(self.table)
 
 
 	def hash(self, data: bytes) -> HashOutput:
